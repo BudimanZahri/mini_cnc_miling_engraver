@@ -1,8 +1,0 @@
-C:\Users\daffa\Documents\SharpDevelop Projects\MINI_CNC_MILING\MINI_CNC_MILING\obj\Debug\MINI_CNC_MILING.csprojResolveAssemblyReference.cache
-C:\Users\daffa\Documents\SharpDevelop Projects\MINI_CNC_MILING\MINI_CNC_MILING\obj\Debug\MINI_CNC_MILING.MainForm.resources
-C:\Users\daffa\Documents\SharpDevelop Projects\MINI_CNC_MILING\MINI_CNC_MILING\obj\Debug\MINI_CNC_MILING.csproj.GenerateResource.Cache
-C:\Users\daffa\Documents\SharpDevelop Projects\MINI_CNC_MILING\MINI_CNC_MILING\bin\Debug\MINI_CNC_MILING.exe
-C:\Users\daffa\Documents\SharpDevelop Projects\MINI_CNC_MILING\MINI_CNC_MILING\bin\Debug\MINI_CNC_MILING.pdb
-C:\Users\daffa\Documents\SharpDevelop Projects\MINI_CNC_MILING\MINI_CNC_MILING\bin\Debug\Guna.UI2.dll
-C:\Users\daffa\Documents\SharpDevelop Projects\MINI_CNC_MILING\MINI_CNC_MILING\obj\Debug\MINI_CNC_MILING.exe
-C:\Users\daffa\Documents\SharpDevelop Projects\MINI_CNC_MILING\MINI_CNC_MILING\obj\Debug\MINI_CNC_MILING.pdb
