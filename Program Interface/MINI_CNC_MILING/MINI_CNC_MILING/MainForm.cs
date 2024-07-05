@@ -59,6 +59,9 @@ namespace MINI_CNC_MILING
             is_green_lamp_indicator_z_axis.Visible = false;
             is_red_lamp_indicator_z_axis.Visible = true;
             is_yellow_lamp_indicator_z_axis.Visible = false;
+            
+            arrow_up_z_axis.Visible = false;
+            arrow_down_z_axis.Visible = false;
         }
 
         private void PopulateSerialComDropdown()
@@ -276,6 +279,9 @@ namespace MINI_CNC_MILING
 			is_green_lamp_indicator_z_axis.Visible = false;
             is_red_lamp_indicator_z_axis.Visible = true;
             is_yellow_lamp_indicator_z_axis.Visible = false;
+            
+            arrow_up_z_axis.Visible = false;
+            arrow_down_z_axis.Visible = false;
 			
 			if (serialPort.IsOpen)
             {
@@ -288,6 +294,9 @@ namespace MINI_CNC_MILING
 			is_green_lamp_indicator_z_axis.Visible = true;
             is_red_lamp_indicator_z_axis.Visible = false;
             is_yellow_lamp_indicator_z_axis.Visible = false;
+            
+            arrow_up_z_axis.Visible = false;
+            arrow_down_z_axis.Visible = true;
 			
 			if (serialPort.IsOpen)
             {
@@ -300,6 +309,9 @@ namespace MINI_CNC_MILING
 			is_green_lamp_indicator_z_axis.Visible = false;
             is_red_lamp_indicator_z_axis.Visible = false;
             is_yellow_lamp_indicator_z_axis.Visible = true;
+            
+            arrow_up_z_axis.Visible = true;
+            arrow_down_z_axis.Visible = false;
 			
 			if (serialPort.IsOpen)
             {
@@ -312,6 +324,11 @@ namespace MINI_CNC_MILING
 			Button_disable_xClick(sender, e);
 			Button_disable_yClick(sender, e);
 			Button_disable_zClick(sender, e);
+		}
+		
+		void Arrow_right_y_axisClick(object sender, EventArgs e)
+		{
+			
 		}
     }
 }

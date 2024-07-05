@@ -77,6 +77,8 @@ namespace MINI_CNC_MILING
 			this.is_red_lamp_indicator_z_axis = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.pictureBox3 = new Guna.UI2.WinForms.Suite.PictureBox();
 			this.guna2TrackBar1 = new Guna.UI2.WinForms.Guna2TrackBar();
+			this.arrow_down_z_axis = new Guna.UI2.WinForms.Suite.PictureBox();
+			this.arrow_up_z_axis = new Guna.UI2.WinForms.Suite.PictureBox();
 			this.button_enable_ccw_z = new Guna.UI2.WinForms.Guna2Button();
 			this.button_disable_z = new Guna.UI2.WinForms.Guna2Button();
 			this.button_enable_cw_z = new Guna.UI2.WinForms.Guna2Button();
@@ -103,6 +105,8 @@ namespace MINI_CNC_MILING
 			((System.ComponentModel.ISupportInitialize)(this.is_green_lamp_indicator_z_axis)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.is_red_lamp_indicator_z_axis)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.arrow_down_z_axis)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.arrow_up_z_axis)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// button_enable_cw_x
@@ -441,6 +445,7 @@ namespace MINI_CNC_MILING
 			this.arrow_right_y_axis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.arrow_right_y_axis.TabIndex = 4;
 			this.arrow_right_y_axis.TabStop = false;
+			this.arrow_right_y_axis.Click += new System.EventHandler(this.Arrow_right_y_axisClick);
 			// 
 			// arrow_left_y_axis
 			// 
@@ -616,6 +621,8 @@ namespace MINI_CNC_MILING
 			this.guna2GroupBox3.Controls.Add(this.is_red_lamp_indicator_z_axis);
 			this.guna2GroupBox3.Controls.Add(this.pictureBox3);
 			this.guna2GroupBox3.Controls.Add(this.guna2TrackBar1);
+			this.guna2GroupBox3.Controls.Add(this.arrow_down_z_axis);
+			this.guna2GroupBox3.Controls.Add(this.arrow_up_z_axis);
 			this.guna2GroupBox3.Controls.Add(this.button_enable_ccw_z);
 			this.guna2GroupBox3.Controls.Add(this.button_disable_z);
 			this.guna2GroupBox3.Controls.Add(this.button_enable_cw_z);
@@ -692,6 +699,31 @@ namespace MINI_CNC_MILING
 			this.guna2TrackBar1.ThumbColor = System.Drawing.Color.OrangeRed;
 			this.guna2TrackBar1.Value = 10000;
 			this.guna2TrackBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Trackbar_x_axisScroll);
+			// 
+			// arrow_down_z_axis
+			// 
+			this.arrow_down_z_axis.BackColor = System.Drawing.Color.Transparent;
+			this.arrow_down_z_axis.Image = ((System.Drawing.Image)(resources.GetObject("arrow_down_z_axis.Image")));
+			this.arrow_down_z_axis.Location = new System.Drawing.Point(36, 156);
+			this.arrow_down_z_axis.Margin = new System.Windows.Forms.Padding(0);
+			this.arrow_down_z_axis.Name = "arrow_down_z_axis";
+			this.arrow_down_z_axis.Size = new System.Drawing.Size(108, 79);
+			this.arrow_down_z_axis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.arrow_down_z_axis.TabIndex = 4;
+			this.arrow_down_z_axis.TabStop = false;
+			this.arrow_down_z_axis.Click += new System.EventHandler(this.Arrow_right_y_axisClick);
+			// 
+			// arrow_up_z_axis
+			// 
+			this.arrow_up_z_axis.BackColor = System.Drawing.Color.Transparent;
+			this.arrow_up_z_axis.Image = ((System.Drawing.Image)(resources.GetObject("arrow_up_z_axis.Image")));
+			this.arrow_up_z_axis.Location = new System.Drawing.Point(36, 156);
+			this.arrow_up_z_axis.Margin = new System.Windows.Forms.Padding(0);
+			this.arrow_up_z_axis.Name = "arrow_up_z_axis";
+			this.arrow_up_z_axis.Size = new System.Drawing.Size(108, 79);
+			this.arrow_up_z_axis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.arrow_up_z_axis.TabIndex = 4;
+			this.arrow_up_z_axis.TabStop = false;
 			// 
 			// button_enable_ccw_z
 			// 
@@ -800,8 +832,12 @@ namespace MINI_CNC_MILING
 			((System.ComponentModel.ISupportInitialize)(this.is_green_lamp_indicator_z_axis)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.is_red_lamp_indicator_z_axis)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.arrow_down_z_axis)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.arrow_up_z_axis)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private Guna.UI2.WinForms.Suite.PictureBox arrow_down_z_axis;
+		private Guna.UI2.WinForms.Suite.PictureBox arrow_up_z_axis;
 		private Guna.UI2.WinForms.Suite.PictureBox arrow_down_x_axis;
 		private Guna.UI2.WinForms.Suite.PictureBox arrow_up_x_axis;
 		private Guna.UI2.WinForms.Suite.PictureBox arrow_right_y_axis;
